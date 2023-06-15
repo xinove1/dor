@@ -1,0 +1,6 @@
+com\mycompany\gerenciamentohotel\GerenciamentoHotel.class
+com\mycompany\gerenciamentohotel\Quarto.class
+com\mycompany\gerenciamentohotel\Cliente.class
+com\mycompany\gerenciamentohotel\HotelException.class
+com\mycompany\gerenciamentohotel\Hotel.class
+com\mycompany\gerenciamentohotel\Reserva.class

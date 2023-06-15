@@ -15,7 +15,7 @@ public class Quarto {
         this.numeroQuarto = numeroQuarto;
         this.tipoQuarto = tipoQuarto;
         this.precoPorNoite = precoPorNoite;
-        this.reservado = 0;
+        this.reservado = null;
     }
     
     // Getters e Setters
@@ -39,7 +39,7 @@ public class Quarto {
         this.precoPorNoite = precoPorNoite;
     }
 
-    public void setReservardo(Bool reserva) {
-        this.reservado = reserva;
-    }
+    /*public void setReservardo(boolean reserva) {
+        this.reservado = Reserva;
+    }*/
 }

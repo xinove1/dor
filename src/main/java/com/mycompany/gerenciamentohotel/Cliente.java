@@ -1,7 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+package com.mycompany.gerenciamentohotel;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,9 +8,7 @@ public class Cliente extends Pessoa {
     
     // Construtor
     public Cliente(String nome, String telefone, String numIdentificacao) {
-        this.nome = nome;
-        this.telefone = telefone;
-        this.numIdentificacao = numIdentificacao;
+        super(nome, telefone, numIdentificacao);
         this.reservas = new ArrayList<>();
     }
 

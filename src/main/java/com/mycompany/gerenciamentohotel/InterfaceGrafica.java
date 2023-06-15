@@ -1,3 +1,5 @@
+package com.mycompany.gerenciamentohotel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,7 +18,7 @@ public class InterfaceGrafica extends JFrame {
 
     private List<Cliente> clientes;
     private List<Reserva> reservas; // Nao precisa
-    private List<quarto> quartos;
+    private List<Quarto> quartos;
 
     public InterfaceGrafica() {
         clientes = new ArrayList<>();

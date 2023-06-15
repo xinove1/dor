@@ -7,6 +7,7 @@ package com.mycompany.gerenciamentohotel;
 public class Quarto {
     private int numeroQuarto;
     private String tipoQuarto;
+    private Reserva reservado;
     private double precoPorNoite;
     
     // Construtor
@@ -14,15 +15,12 @@ public class Quarto {
         this.numeroQuarto = numeroQuarto;
         this.tipoQuarto = tipoQuarto;
         this.precoPorNoite = precoPorNoite;
+        this.reservado = 0;
     }
     
     // Getters e Setters
     public int getNumeroQuarto() {
         return numeroQuarto;
-    }
-    
-    public void setNumeroQuarto(int numeroQuarto) {
-        this.numeroQuarto = numeroQuarto;
     }
     
     public String getTipoQuarto() {
@@ -39,5 +37,9 @@ public class Quarto {
     
     public void setPrecoPorNoite(double precoPorNoite) {
         this.precoPorNoite = precoPorNoite;
+    }
+
+    public void setReservardo(Bool reserva) {
+        this.reservado = reserva;
     }
 }

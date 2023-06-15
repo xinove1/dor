@@ -8,10 +8,10 @@ import java.util.Date;
 
 public class Reserva {
     private Cliente cliente;
+    private Quarto quarto;
     private Date dataCheckIn;
     private Date dataCheckOut;
-    private Quarto quarto;
-    
+
     // Construtor
     public Reserva(Cliente cliente, Date dataCheckIn, Date dataCheckOut, Quarto quarto) {
         this.cliente = cliente;

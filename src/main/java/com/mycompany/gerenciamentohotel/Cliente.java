@@ -9,7 +9,10 @@ public class Cliente extends Pessoa {
     private List<Reserva> reservas;
     
     // Construtor
-    public Cliente(Pessoa pessoa) {
+    public Cliente(String nome, String telefone, String numIdentificacao) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.numIdentificacao = numIdentificacao;
         this.reservas = new ArrayList<>();
     }
 

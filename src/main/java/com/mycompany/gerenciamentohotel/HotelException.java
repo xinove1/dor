@@ -4,7 +4,7 @@
  */
 package com.mycompany.gerenciamentohotel;
 
-public class HotelException extends Exception {
+public interface HotelException extends Exception {
     public HotelException(String mensagem) {
         super(mensagem);
     }

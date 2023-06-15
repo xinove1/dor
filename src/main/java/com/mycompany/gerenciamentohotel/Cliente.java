@@ -2,42 +2,30 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.gerenciamentohotel;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Cliente {
-    private String nome;
-    private String telefone;
-    private String numIdentificacao;
+public class Cliente extends Pessoa {
+    private List<Reserva> reservas;
     
     // Construtor
-    public Cliente(String nome, String telefone, String numIdentificacao) {
-        this.nome = nome;
-        this.telefone = telefone;
-        this.numIdentificacao = numIdentificacao;
+    public Cliente(Pessoa pessoa) {
+        this.reservas = new ArrayList<>();
     }
-    
-    // Getters e Setters
-    public String getNome() {
-        return nome;
+
+    public void adicionarReserva(Reserva reserva) {
+        this.reservas.add(reserva);
     }
-    
-    public void setNome(String nome) {
-        this.nome = nome;
+
+    public List<Reserva> getReservas() {
+        return this.reservas;
     }
-    
-    public String getTelefone() {
-        return telefone;
-    }
-    
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-    
-    public String getNumIdentificacao() {
-        return numIdentificacao;
-    }
-    
-    public void setNumIdentificacao(String numIdentificacao) {
-        this.numIdentificacao = numIdentificacao;
+
+    public int quantidadeDeReservas() {
+        int count = 0;
+        for (Reserva reserva: reservas) {
+            count++;
+        }
+        return count;
     }
 }

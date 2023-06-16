@@ -10,7 +10,7 @@ public class Cliente extends Pessoa {
     public Cliente(String nome, String telefone, String numIdentificacao) {
         super(nome, telefone, numIdentificacao);
         this.reservas = new ArrayList<>();
-    }
+    }   
 
     public void adicionarReserva(Reserva reserva) {
         this.reservas.add(reserva);
